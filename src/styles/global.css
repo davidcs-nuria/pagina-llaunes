@@ -1,0 +1,13 @@
+@import "tailwindcss";
+html {
+    background: linear-gradient(152deg, rgba(0, 0, 0, 1) 0%, rgba(74, 72, 66, 1) 100%);
+}
+
+.lata:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}

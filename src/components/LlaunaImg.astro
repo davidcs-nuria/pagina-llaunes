@@ -1,0 +1,23 @@
+---
+interface Props {
+    flavour: string;
+    side: string;
+}
+
+const {flavour="uvas", side="front"} = Astro.props;
+
+const sourceavif = `/img/${flavour}/${side}.avif`;
+const sourcewebp = `/img/${flavour}/${side}.webp`;
+const sourcejpg = `/img/${flavour}/${side}.jpg`;
+const sourcepng = `/img/${flavour}/${side}.png`;
+const altTxt = `Llauna de ${flavour}`
+---
+
+<a class="w-32 animate__animated animate__swing lata" href="#">
+    <picture>
+        <source srcset={sourceavif} type="image/avif"/>
+        <source srcset={sourcewebp} type="image/webp"/>
+        <source srcset={sourcejpg} type="image/jpeg"/>
+        <img src={sourcepng} alt={altTxt}/>
+    </picture>
+</a>
