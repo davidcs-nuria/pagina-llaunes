@@ -1,0 +1,29 @@
+---
+import Header from "../components/Header.astro";
+import Peu from "../components/Peu.astro";
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="es" class="">
+<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <script src="https://kit.fontawesome.com/8811daf8c9.js" crossorigin="anonymous"></script>
+    <title>STORMCHARGE</title>
+</head>
+<body class="movey-64">
+	<Header/>
+
+    <main>
+        <slot>
+        
+        </slot>
+    </main>
+
+    <Peu/>
+</body>
+</html>

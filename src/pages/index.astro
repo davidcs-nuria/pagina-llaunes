@@ -1,41 +1,33 @@
 ---
 import LlaunaImg from "../components/LlaunaImg.astro";
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import 'animate.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div class="grid h-screen w-screen content-center">
-			<h1 class="text-center mb-6 font-bold text-3xl text-white">STORMCHARGE</h1>
-			<div class="flex flex-row gap-5 justify-center">
-				<LlaunaImg
-					flavour="mango"
-					side="frente"/>
-				<LlaunaImg 
-					flavour="coco"
-					side="frente"/>
-				<LlaunaImg
-					flavour="manzana"
-					side="frente"/>
-				<LlaunaImg
-					flavour="pitahaya"
-					side="frente"/>
-				<LlaunaImg
-					flavour="taronja"
-					side="frente"/>
-				<LlaunaImg
-					flavour="uves"
-					side="frente"/>
-			</div>
-		</div>
-	</body>
-</html>
+<Layout>
+	<div class="flex w-screen justify-center bg-stone-800 mb-10">
+		<video src="/pagina-llaunes/video/header.mp4" width="500px" autoplay loop></video>
+	</div>
+	<h1 class="text-center mb-6 font-bold text-3xl text-white">LES NOSTRES BEGUDES</h1>
+	<div class="flex flex-row gap-3 justify-center md:gap-10">
+		<LlaunaImg
+			flavour="mango"
+			side="frente"/>
+		<LlaunaImg 
+			flavour="coco"
+			side="frente"/>
+		<LlaunaImg
+			flavour="manzana"
+			side="frente"/>
+		<LlaunaImg
+			flavour="pitahaya"
+			side="frente"/>
+		<LlaunaImg
+			flavour="taronja"
+			side="frente"/>
+		<LlaunaImg
+			flavour="uves"
+			side="frente"/>
+	</div>
+</Layout>
