@@ -13,11 +13,11 @@ const sourcepng = `/pagina-llaunes/img/${flavour}/${side}.png`;
 const altTxt = `Llauna de ${flavour}`
 ---
 
-<div class="sm:w-32 w-20 lata-deco order-1">
+<a class="sm:w-32 w-20 lata order-1" href=`/pagina-llaunes/sabores/${flavour}`>
     <picture>
         <source srcset={sourceavif} type="image/avif"/>
         <source srcset={sourcewebp} type="image/webp"/>
         <source srcset={sourcejpg} type="image/jpeg"/>
         <img src={sourcepng} alt={altTxt}/>
     </picture>
-</div>
+</a>

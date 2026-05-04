@@ -5,11 +5,28 @@ html {
 }
 
 .lata {
+    order: 1;
+    rotate: 10deg;
     top: 0px;
     transition: 0.3s;
 }
 
 .lata:hover {
+    order: 1;
+    rotate: none;
     /* animation-name: hoverAnim; */
     transform: scale(1.1) translateY(-20px);
+}
+
+.lata-deco {
+    order: 1;
+    rotate: 10deg;
+    top: 0px;
+    transition: 0.3s;
+}
+
+.lata-deco:hover {
+    order: 1;
+    rotate: 15deg;
+    /* animation-name: hoverAnim; */
 }
