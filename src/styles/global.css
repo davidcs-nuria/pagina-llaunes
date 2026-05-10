@@ -4,6 +4,25 @@ html {
     /* animation-name: unhoverAnim; */
 }
 
+.parallax {
+    background-image: url('/pagina-llaunes/img/background.png');
+    min-height: 80vh;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+    
+.content {
+    display: block;
+    filter: none;
+}
+
 .lata {
     order: 1;
     rotate: 10deg;
