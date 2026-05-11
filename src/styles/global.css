@@ -4,34 +4,54 @@ html {
     /* animation-name: unhoverAnim; */
 }
 
-.parallax {
-    background-image: url('/pagina-llaunes/img/background.png');
-    min-height: 80vh;
+header {
+    z-index: 1;
+}
 
+.parallax {
+    background-image: url('/pagina-llaunes/img/background.webp');
+    min-height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transform: translateZ();
+    z-index: -2;
 }
-    
+
+.parallax-section {
+    filter: opacity(90%);
+    background-image: url('/pagina-llaunes/img/parallax.avif');
+    min-height: 50vh;
+    min-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: -2;
+}
+
 .content {
     display: block;
     filter: none;
 }
 
 .lata {
-    order: 1;
     rotate: 10deg;
     top: 0px;
     transition: 0.3s;
+    z-index: 0;
 }
 
 .lata:hover {
-    order: 1;
     rotate: none;
     /* animation-name: hoverAnim; */
     transform: scale(1.1) translateY(-20px);
