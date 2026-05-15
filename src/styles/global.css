@@ -6,8 +6,8 @@ html {
 
 header {
     z-index: 1;
-    * {
-        transition: 0.2s;
+    transition: 0.2s;
+    ul li {
          :hover {
             color: gray;
         }
