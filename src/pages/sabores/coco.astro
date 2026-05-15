@@ -7,27 +7,31 @@ import 'animate.css';
 ---
 
 <Layout>
-    <div class="flex flex-row m-5 mb-10 gap-10 justify-center items-center">
-        <div class="text-white text-right align-center h-[90%] w-[40%]">
-            <p class="font-bold sm:text-2xl text-xl mulish-bold">STORMCHARGE COCO</p>
-            <p class="sm:text-sm text-xs mulish-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi maiores minima a quae temporibus molestias quasi tempore. Quos reiciendis ab quod qui voluptates aspernatur. Illo animi accusamus at sit.</p>
-            <br>
-            <a href="#" class="bg-[#9C6A4F] text-[#ACA794] font-bold sm:text-md text-sm hover:text-white p-2 transition-[0.2s] mulish-bold">ON TROBAR</a>
+    <div class="flex md:flex-row flex-col m-10 gap-10 justify-around items-center">
+        <div class="text-white text-right align-center h-[90%] w-[100vw] md:w-[40%] md:flex-col flex-row">
+            <div class="flex flex-col gap-5">
+                <p class="font-bold sm:text-4xl text-2xl mulish-bold md:text-left text-center">STORMCHARGE COCO</p>
+                <p class="sm:text-sm text-md mulish-thin object-cover md:flex hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi maiores minima a quae temporibus molestias quasi tempore. Quos reiciendis ab quod qui voluptates aspernatur. Illo animi accusamus at sit.</p>
+                <a href="#" class="bg-[#9C6A4F] text-[#ACA794] font-bold sm:text-md text-sm hover:text-white p-2 transition-[0.2s] mt-8 mulish-bold md:block hidden">ON TROBAR</a>
+            </div>
         </div>
         <div class="flex">
             <LlaunaImg
                 flavour="coco"
                 side="frente"/>
         </div>
+        <div class="md:hidden block">
+            <a href="#" class="bg-[#9C6A4F] text-[#ACA794] font-bold sm:text-md text-sm hover:text-white p-2 transition-[0.2s] mt-8 mulish-bold">ON TROBAR</a>
+        </div>
     </div>
 
     <section class="parallax-section">
-        <div class="flex justify-center m-30 text-white">
-            <div class="flex flex-col bg-stone-600 text-right p-20">        
+        <div class="flex justify-center md:m-30 m-10 text-white">
+            <div class="flex flex-col bg-stone-600 text-right md:p-20 p-10">
                 <p class="font-bold text-2xl align-right mulish-bold">test</p>
                 <p class="align-right mulish-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            <div class="flex flex-col bg-stone-700 text-left p-20">
+            <div class="flex flex-col bg-stone-700 text-left md:p-20 p-10">
                 <p class="font-bold text-2xl mulish-bold">test</p>
                 <p class="align-left mulish-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>

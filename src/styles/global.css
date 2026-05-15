@@ -6,6 +6,12 @@ html {
 
 header {
     z-index: 1;
+    * {
+        transition: 0.2s;
+         :hover {
+            color: gray;
+        }
+    }
 }
 
 .parallax {
@@ -25,7 +31,6 @@ header {
 .parallax-section {
     filter: opacity(90%);
     background-image: url('/pagina-llaunes/img/parallax.avif');
-    min-height: 50vh;
     min-width: 80vw;
     justify-content: center;
     align-items: center;
